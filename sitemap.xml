@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://assistivetechnology.it/</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/prefazione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/introduzione/definizione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/introduzione/storia</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/introduzione/classificazione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita/definizione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita/tecnologie/introduzione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita/tecnologie/hardware</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita/tecnologie/software</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/definizione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/w3c</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/wai</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/wai-aria</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/wcag</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/wai-altro</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/migliorare-accessibilita</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/conclusione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/accessibilita-web/legislazione</loc>
+  <lastmod>2012-06-22T17:34:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://assistivetechnology.it/appendice/braille</loc>
+  <image:image>
+    <image:loc>http://assistivetechnology.it/imgs/braille-cella.png</image:loc>
+    <image:title>Cella Braille</image:title>
+    <image:caption>esempio di cella braille</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://assistivetechnology.it/imgs/braille-cella-8.png</image:loc>
+    <image:title>Cella Braille a 8 punti</image:title>
+    <image:caption>esempio di cella braille a 8 punti</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://assistivetechnology.it/imgs/braille-alfabeto.png</image:loc>
+    <image:title>Alfabeto Braille</image:title>
+    <image:caption>alfabeto base in braille</image:caption>
+  </image:image>
+  <lastmod>2012-06-27T15:40:00+00:00</lastmod>
+</url>
+</urlset>

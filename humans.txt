@@ -1,0 +1,22 @@
+/* TEAM */
+  Author: Luca Lischetti
+  Email: sirLisko@gmail.com
+  Site: http://sirLisko.com
+  Twitter: @sirLisko
+  Location: London, UK
+
+
+
+/* THANKS */
+
+  Review and Support: Paolo Cinque
+  From: Milan, Italy
+
+  Support: Federico Colombo
+  From: Varese, Italy
+
+
+
+/* SITE */
+  Last update: 2012/06/22
+  Language: Italian

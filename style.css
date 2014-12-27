@@ -1,0 +1,64 @@
+*[accesskey]:after {content:' [' attr(accesskey) ']'}
+body {
+	font-family: tahoma, arial, sans-serif;
+}
+table {
+	text-align: center;
+}
+header {
+	text-align: center;
+}
+li.appendice {
+	list-style-type: none;
+}
+li.appendice li{
+	list-style-type: upper-alpha;
+}
+h1 {
+font-size: 200%;
+margin-left: -1em;
+margin-bottom: 1.4em;
+page-break-before: left;
+}
+h1 .capitolo {
+display: block;
+font-size: 45%;
+font-weight: normal;
+}
+article{
+padding: 3em 5em;
+padding-right: 4em;
+max-width: 850px;
+color: #222;
+line-height: 150%
+}
+nav {
+font-size: 80%;
+color: #AAA;
+padding-left: 3em;
+}
+nav ul {
+	list-style-type: none;
+}
+nav li {
+	float: left;
+}
+.referenze {
+	font-size: 80%;
+	line-height: 100%;
+	margin-top: 3em;
+}
+footer {
+	font-size: 80%;
+	color: #AAA;
+	margin-top: 2em;
+	padding: 3em 6em;
+	line-height: 150%
+}
+sup {
+	font-size: 10px;
+}
+
+sup.reference:target {
+	background-color: #DEF;
+}

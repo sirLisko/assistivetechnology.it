@@ -1,0 +1,5 @@
+	<footer>
+		&copy; <a href="mailto:luca.lischetti@gmail.com">Luca Lischetti</a> (<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/it/">licenza</a>), scritto Gennaio - Marzo 2010, ultima modifica Giugno 2012.
+	</footer>
+</body>
+</html>
