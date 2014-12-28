@@ -1,0 +1,34 @@
+{
+  "name": "assistivetechnology.it",
+  "version": "1.0.0",
+  "description": "Assistive Technology - Informatizzando la disabilità",
+  "author": {
+    "name": "Luca Lischetti",
+    "email": "sirlisko@gmail.com",
+    "url": "http://sirlisko.com"
+  },
+  "homepage": "http://assistivetechnology.it",
+  "scripts": {
+    "postinstall": "node_modules/.bin/gulp",
+    "start": "node_modules/gulp/bin/gulp.js open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sirLisko/assistivetechnology.it.git"
+  },
+  "keywords": [
+    "assistive",
+    "technology"
+  ],
+  "license": "CC BY-NC-SA 3.0 IT",
+  "devDependencies": {
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-csso": "^0.2.9",
+    "gulp-file-include": "^0.3.1",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-minify-html": "^0.1.7",
+    "gulp-util": "^3.0.1",
+    "open": "0.0.5"
+  }
+}
