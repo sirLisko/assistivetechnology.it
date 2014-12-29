@@ -21,7 +21,7 @@
 		<p>Quando ad esempio si inserisce un immagine all'intero di una pagina web lo si fa mediante il tag <em>img</em>. Per capire meglio questo punto è opportuno specificare nel dettaglio il funzionamento del tag <em>img</em>.</p>
 		<p>Il tag <em>img</em> ha una struttura molto semplice, per mostrare un immagine sarà solamente necessario impostare l'attributo src con l'indirizzo appunto dell'immagine:</p>
 		<pre>
-			<code>&lt;img src="my_image.gif" alt="la mia immagine" /&gt;</code>
+	<code>&lt;img src="my_image.gif" alt="la mia immagine" /&gt;</code>
 		</pre>
 		<p>L'attributo alt ha il compito di fornire al browser un testo alternativo qualora non fosse possibile la visualizzazione dell'immagine oppure nel caso la pagina venga letta da uno screen reader.</p>
 		<p>In questo esempio sono rappresentati solo gli attributi essenziali, ve ne sono altri ma non di rilevante importanza per l'accessibilità.</p>
@@ -50,11 +50,11 @@
 		<p>Non tutti i browser supportano script, applet o plug-in vari e, in alcuni casi, l'utente per svariati motivi può disabilitare il normale funzionamento di questi. Di conseguenza è sempre opportuno fornire delle descrizioni alternative agli elementi "esterni" inseriti all'interno delle pagine Web.</p>
 		<p>L'esempio seguente illustra il funzionamento con uno script e relativo tag noscript.</p>
 		<pre>
-			<code>
-				&lt;script type="text/javascript"&gt;
-				document.write("Hello World!")
-				&lt;/script&gt;
-			</code>
+	<code>
+		&lt;script type="text/javascript"&gt;
+		document.write("Hello World!")
+		&lt;/script&gt;
+	</code>
 		</pre>
 		<noscript>Your browser does not support JavaScript!</noscript>
 		<p>Lo <em>script</em> qui riportato ha il compito di stampare a video la frase <em>Hello World</em>!. Nel caso qualcosa non dovesse funzionare, al posto dello <em>script</em>, verrà visualizzato il testo contenuto nel tag <em>noscript</em>. Al suo interno può essere inserito qualsiasi elemento normalmente collocabile in una pagina HTML. Il contenuto del tag <em>noscript</em> verrà mostrato solamente nel qual caso gli <em>script</em> non siano supportati oppure siano stati disabilitati dall'utente.</p>
@@ -63,21 +63,21 @@
 		<p>Il tag <em>noframes</em> ha un funzionamento analogo a noscript, con la sola differenza che viene usato quando un browser non supporta i <em>frames</em>.</p>
 		<p>I frames non sono altro che suddivisioni della pagina in parti a se stanti. Consentono di visualizzare differenti documenti, collegati con l'attributo <em>src</em>, contemporaneamente all'interno di una sola pagina Web.</p>
 		<pre>
-			<code>&lt;frameset cols="25%,50%,25%"&gt;
-				&lt;frame src="frame_a.htm" /&gt;
-				&lt;frame src="frame_b.htm" /&gt;
-				&lt;frame src="frame_c.htm" /&gt;
-				&lt;noframes&gt;
-				Sorry, your browser does not handle frames!
-				&lt;/noframes&gt;
-				&lt;/frameset&gt;
-			</code>
+	<code>&lt;frameset cols="25%,50%,25%"&gt;
+		&lt;frame src="frame_a.htm" /&gt;
+		&lt;frame src="frame_b.htm" /&gt;
+		&lt;frame src="frame_c.htm" /&gt;
+		&lt;noframes&gt;
+		Sorry, your browser does not handle frames!
+		&lt;/noframes&gt;
+	&lt;/frameset&gt;
+	</code>
 		</pre>
 		<p>Come mostrato nell'esempio se il browser non supporta i frame la pagina non verrà caricata e al suo posto apparirà il testo (o la pagina alternativa) contenuto nel tag <em>noframe</em>.</p>
 		<p>Chiaramente per motivi di accessibilità e portabilità di pagine Web l'uso dei frames è altamente consigliato.</p>
 		<h3>9. Tabelle</h3>
 		<p><strong><em>Facilitare la lettura linea per linea. Riassumere.</em></strong></p>
-		<h3>10.Verificare il lavoro</h3>
+		<h3>10. Verificare il lavoro</h3>
 		<p><strong><em>Validare. Utilizzare gli strumenti, la lista di controllo e le linee guida di WCAG.</em></strong></p>
 		<p>Sia la validazione del codice che la linea guida <em>WCAG</em> saranno trattati nei prossimi capitoli.</p>
 		<section class="referenze">

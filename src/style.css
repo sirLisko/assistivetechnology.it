@@ -19,7 +19,7 @@ h1 {
 }
 h1 .capitolo {
 	display: block;
-	font-size: 45%;
+	font-size: 50%;
 	font-weight: normal;
 }
 article{
@@ -30,7 +30,6 @@ article{
 }
 nav {
 	color: #AAA;
-	font-size: 80%;
 	padding-left: 3em;
 }
 nav ul {
@@ -43,6 +42,13 @@ nav li {
 	font-size: 80%;
 	line-height: 100%;
 	margin-top: 3em;
+}
+.referenze li {
+	line-height: 2;
+}
+.referenze li a:first-child {
+	font-weight: bold;
+	text-decoration: none;
 }
 footer {
 	color: #AAA;
