@@ -28,6 +28,7 @@
     "gulp-file-include": "^0.3.1",
     "gulp-load-plugins": "^0.7.1",
     "gulp-minify-html": "^0.1.7",
+    "gulp-sitemap": "^2.0.0",
     "gulp-util": "^3.0.1",
     "open": "0.0.5"
   }
