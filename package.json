@@ -9,7 +9,7 @@
   },
   "homepage": "http://assistivetechnology.it",
   "scripts": {
-    "postinstall": "node_modules/.bin/gulp",
+    "postinstall": "node_modules/.bin/gulp build",
     "start": "node_modules/gulp/bin/gulp.js open"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "license": "CC BY-NC-SA 3.0 IT",
   "devDependencies": {
     "del": "^1.1.0",
+    "glob": "^4.3.2",
     "gulp": "^3.8.10",
     "gulp-csso": "^0.2.9",
     "gulp-file-include": "^0.3.1",
@@ -30,6 +31,7 @@
     "gulp-minify-html": "^0.1.7",
     "gulp-sitemap": "^2.0.0",
     "gulp-util": "^3.0.1",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "w3cjs": "^0.1.25"
   }
 }

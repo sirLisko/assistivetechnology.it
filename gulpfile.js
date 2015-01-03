@@ -53,9 +53,32 @@ gulp.task('sitemap', function () {
 });
 
 
+gulp.task('validate', function(){
+	var w3cjs = require('w3cjs');
+
+	require("glob")("./build/**/*.html", function (er, files) {
+		files.forEach(function(e){
+			w3cjs.validate({
+				file: e,
+				callback: function (res) {
+					if(res.messages && res.messages.length){
+						$.util.log($.util.colors.red(res.context));
+						console.log(res);
+					} else {
+						 $.util.log(res.context + $.util.colors.green(' [  OK  ]'));
+					}
+				}
+			});
+		});
+	});
+});
+
+
 gulp.task('watch', function() {
 	gulp.start('default');
 	gulp.watch('./src/**/*.html', ['html']);
+	gulp.watch('./src/*.css', ['css']);
 });
 
-gulp.task('default', ['html', 'copy', 'css', 'sitemap']);
+gulp.task('default', ['html', 'copy', 'css']);
+gulp.task('build', ['default', 'validate', 'sitemap']);
