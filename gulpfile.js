@@ -5,7 +5,7 @@ var $ = require('gulp-load-plugins')();
 
 
 var onError = function(err){
-    $.util.log(err.plugin + ': ' + $.util.colors.red(err.message));
+	$.util.log(err.plugin + ': ' + $.util.colors.red(err.message));
 	$.util.beep();
 };
 
@@ -23,17 +23,17 @@ gulp.task('copy', function(){
 });
 
 
-gulp.task('css', function () {
-    return gulp.src('./src/style.css')
-        .pipe($.csso())
-        .pipe(gulp.dest('./build'));
+gulp.task('css', function() {
+	return gulp.src('./src/style.css')
+		.pipe($.csso())
+		.pipe(gulp.dest('./build'));
 });
 
 
 gulp.task('html', function() {
 	gulp.src(['./src/pages/**/*.html'])
 		.pipe($.fileInclude())
-       	.on('error', onError)
+		.on('error', onError)
 		/*.pipe($.minifyHtml())*/
 		.pipe(gulp.dest('./build'));
 });
@@ -44,33 +44,32 @@ gulp.task('open', function(){
 });
 
 
-gulp.task('sitemap', function () {
-    gulp.src('build/**/*.html')
-        .pipe($.sitemap({
-            siteUrl: 'http://assistivetechnology.it'
-        }))
-        .pipe(gulp.dest('./build'));
+gulp.task('sitemap', function() {
+	gulp.src('build/**/*.html')
+		.pipe($.sitemap({
+			siteUrl: 'http://assistivetechnology.it'
+		}))
+		.pipe(gulp.dest('./build'));
 });
 
 
 gulp.task('validate', function(){
-	var w3cjs = require('w3cjs');
-
-	require("glob")("./build/**/*.html", function (er, files) {
-		files.forEach(function(e){
-			w3cjs.validate({
-				file: e,
-				callback: function (res) {
-					if(res.messages && res.messages.length){
-						$.util.log($.util.colors.red(res.context));
-						console.log(res);
-					} else {
-						 $.util.log(res.context + $.util.colors.green(' [  OK  ]'));
-					}
+	var validate = function(file) {
+		require('w3cjs').validate({
+			input: file.contents,
+			callback: function(res) {
+				if(res.messages && res.messages.length){
+					$.util.log($.util.colors.red(file.path));
+					$.util.log(res.messages);
+				} else {
+					$.util.log(file.path + $.util.colors.green(' [  OK  ]'));
 				}
-			});
+			}
 		});
-	});
+	};
+
+	gulp.src(["./build/**/*.html"])
+		.pipe(require('map-stream')(validate));
 });
 
 
