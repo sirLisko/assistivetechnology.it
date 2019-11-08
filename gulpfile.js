@@ -47,7 +47,7 @@ gulp.task('open', function(){
 gulp.task('sitemap', function() {
 	gulp.src('build/**/*.html')
 		.pipe($.sitemap({
-			siteUrl: 'http://assistivetechnology.it'
+			siteUrl: 'https://assistivetechnology.it'
 		}))
 		.pipe(gulp.dest('./build'));
 });
