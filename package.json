@@ -4,10 +4,10 @@
   "description": "Assistive Technology - Informatizzando la disabilità",
   "author": {
     "name": "Luca Lischetti",
-    "url": "http://sirlisko.com"
     "email": "luca@sirlisko.com",
+    "url": "https://sirlisko.com"
   },
-  "homepage": "http://assistivetechnology.it",
+  "homepage": "https://assistivetechnology.it",
   "scripts": {
     "postinstall": "node_modules/.bin/gulp build",
     "start": "node_modules/gulp/bin/gulp.js open"
