@@ -8,7 +8,7 @@ La tesi, completata il 14 marzo 2010, si concentra sull'utilizzo e lo sviluppo d
 
 ## Contenuti
 
-Documento di tesi: Il file PDF contenente il testo della tesi è disponibile [qui]().
+Documento di tesi: Il file PDF contenente il testo della tesi è disponibile [qui](./extras/Assistive%20Technology%20-%20Luca%20Lischetti.pdf).
 
 ## Licenza
 
