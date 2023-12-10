@@ -1,0 +1,108 @@
+---
+interface Props {
+  description: string;
+  keywords: string;
+  title: string;
+}
+
+const { description, keywords, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Luca Lischetti" />
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <footer>
+      &copy; <a href="mailto:luca@sirlisko.com">Luca Lischetti</a> (<a
+        href="http://creativecommons.org/licenses/by-nc-sa/3.0/it/">licenza</a
+      >), scritto Gennaio - Marzo 2010, ultima modifica Giugno 2012.
+    </footer>
+  </body>
+</html>
+<style is:global>
+  *[accesskey]:after {
+    content: " [" attr(accesskey) "]";
+  }
+  body {
+    font-family: tahoma, arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header,
+  table {
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid #000;
+  }
+  h1 {
+    font-size: 200%;
+    margin-left: -1em;
+    margin-bottom: 1.4em;
+    page-break-before: left;
+    line-height: 1;
+  }
+  h1 .capitolo {
+    display: block;
+    font-size: 50%;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  article {
+    color: #222;
+    line-height: 150%;
+    max-width: 850px;
+    padding: 3em 5em;
+  }
+  nav {
+    color: #aaa;
+    max-width: 850px;
+    width: 100%;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+  }
+  nav li.prev {
+    text-align: right;
+  }
+  .referenze {
+    font-size: 80%;
+    line-height: 100%;
+    margin-top: 3em;
+  }
+  .referenze li {
+    line-height: 2;
+  }
+  .referenze li a:first-child {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  footer {
+    color: #aaa;
+    font-size: 80%;
+    line-height: 150%;
+    margin-top: 2em;
+    padding: 3em 6em;
+  }
+
+  :target {
+    background-color: #def;
+  }
+</style>
