@@ -1,4 +1,5 @@
 ---
+import { Code } from "astro:components";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -6,14 +7,351 @@ import Layout from "../../layouts/Layout.astro";
   title="Legge Stanca - Assistive Technology - Informatizzando la Disabilità"
   description="Legge Stanca, legge italiana che stabilisce e regola gli standard di accessibilità di pagine web e sistemi informatici."
   keywords="Assistive Technology, AT, accessibilità, legge stanca, legislazione"
+  prev={{
+    href: "/appendice/classificazione-dispositivi-assistivi",
+    title: "Appendice B - Classificazione Dispositivi Assistivi",
+  }}
 >
-  <!--<article>
-		<h1><span class="capitolo">Appendice C:</span>Legge Stanca<sup id="cite_ref_1"><a href="#cite_note_1">[1]</a></sup></h1>
-		<section class="referenze">
-			<h4>Referenze</h4>
-			<ol>
-				<li id="cite_note_1"><a href="#cite_ref_1">^</a> Fonte: Unione Italiana Ciechi, sezione di Frosinone <a href="http://www.uicfrosinone.it/">http://www.uicfrosinone.it/</a>.</li>
-			</ol>
-		</section
-	</article>-->
+  <article>
+    <h1>
+      <span class="capitolo">Appendice C:</span>Legge Stanca
+    </h1>
+    <header>
+      <p>Pubblicata in G.U. n. 13 del 17 gennaio 2004</p>
+      <p>
+        La Camera dei deputati ed il Senato della Repubblica hanno approvato;
+      </p><p>IL PRESIDENTE DELLA REPUBBLICA<span>Promulga</span></p><p>
+        la seguente legge:
+      </p><p></p>Disposizioni per favorire l'accesso dei soggetti disabili agli
+      strumenti informatici
+    </header>
+    <h2>Art. 1<span>(Obiettivi e finalità)</span></h2>
+    <p>
+      1. La Repubblica riconosce e tutela il diritto di ogni persona ad accedere
+      a tutte le fonti di informazione e ai relativi servizi, ivi compresi
+      quelli che si articolano attraverso gli strumenti informatici e
+      telematici.
+    </p>
+    <p>
+      2. È tutelato e garantito, in particolare, il diritto di accesso ai
+      servizi informatici e telematici della pubblica amministrazione e ai
+      servizi di pubblica utilità da parte delle persone disabili, in
+      ottemperanza al principio di uguaglianza ai sensi dell'articolo 3 della
+      Costituzione.
+    </p>
+    <h2>Art. 2<span>(Definizioni)</span></h2>
+    <p>
+      1. Ai fini della presente legge, si intende per:
+      <ol>
+        <li>
+          a) «accessibilità»: la capacità dei sistemi informatici, nelle forme e
+          nei limiti consentiti dalle conoscenze tecnologiche, di erogare
+          servizi e fornire informazioni fruibili, senza discriminazioni, anche
+          da parte di coloro che a causa di disabilità necessitano di tecnologie
+          assistive o configurazioni particolari;
+        </li><li>
+          b) «tecnologie assistive»: gli strumenti e le soluzioni tecniche,
+          hardware e software, che permettono alla persona disabile, superando o
+          riducendo le condizioni di svantaggio, di accedere alle informazioni e
+          ai servizi erogati dai sistemi informatici.
+        </li>
+      </ol>
+    </p>
+    <h2>Art. 3<span>(Soggetti erogatori)</span></h2>
+    <p>
+      1. La presente legge si applica alle pubbliche amministrazioni di cui al
+      comma 2 dell'articolo 1 del decreto legislativo 30 marzo 2001, n. 165, e
+      successive modificazioni, agli enti pubblici economici, alle aziende
+      private concessionarie di servizi pubblici, alle aziende municipalizzate
+      regionali, agli enti di assistenza e di riabilitazione pubblici, alle
+      aziende di trasporto e di telecomunicazione a prevalente partecipazione di
+      capitale pubblico e alle aziende appaltatrici di servizi informatici.
+    </p>
+    <p>
+      2. Le disposizioni della presente legge in ordine agli obblighi per
+      l'accessibilità non si applicano ai sistemi informatici destinati ad
+      essere fruiti da gruppi di utenti dei quali, per disposizione di legge,
+      non possono fare parte persone disabili.
+    </p>
+    <h2>Art. 4<span>(Obblighi per l'accessibilità)</span></h2>
+    <p>
+      1. Nelle procedure svolte dai soggetti di cui all'articolo 3, comma 1, per
+      l'acquisto di beni e per la fornitura di servizi informatici, i requisiti
+      di accessibilità stabiliti con il decreto di cui all'articolo 11
+      costituiscono motivo di preferenza a parità di ogni altra condizione nella
+      valutazione dell'offerta tecnica, tenuto conto della destinazione del bene
+      o del servizio. La mancata considerazione dei requisiti di accessibilità o
+      l'eventuale acquisizione di beni o fornitura di servizi non accessibili è
+      adeguatamente motivata.
+    </p>
+    <p>
+      2. I soggetti di cui all'articolo 3, comma 1, non possono stipulare, a
+      pena di nullità, contratti per la realizzazione e la modifica di siti
+      INTERNET quando non è previsto che essi rispettino i requisiti di
+      accessibilità stabiliti dal decreto di cui all'articolo 11. I contratti in
+      essere alla data di entrata in vigore del decreto di cui all'articolo 11,
+      in caso di rinnovo, modifica o novazione, sono adeguati, a pena di
+      nullità, alle disposizioni della presente legge circa il rispetto dei
+      requisiti di accessibilità, con l'obiettivo di realizzare tale adeguamento
+      entro dodici mesi dalla data di entrata in vigore del medesimo decreto.
+    </p>
+    <p>
+      3. La concessione di contributi pubblici a soggetti privati per l'acquisto
+      di beni e servizi informatici destinati all'utilizzo da parte di
+      lavoratori disabili o del pubblico, anche per la predisposizione di
+      postazioni di telelavoro, è subordinata alla rispondenza di tali beni e
+      servizi ai requisiti di accessibilità stabiliti dal decreto di cui
+      all'articolo 11.
+    </p>
+    <p>
+      4. I datori di lavoro pubblici e privati pongono a disposizione del
+      dipendente disabile la strumentazione hardware e software e la tecnologia
+      assistiva adeguata alla specifica disabilità, anche in caso di telelavoro,
+      in relazione alle mansioni effettivamente svolte. Ai datori di lavoro
+      privati si applica la disposizione di cui all'articolo 13, comma 1,
+      lettera c), della legge 12 marzo 1999, n. 68.
+    </p>
+    <p>
+      5. I datori di lavoro pubblici provvedono all'attuazione del comma 4,
+      nell'ambito delle disponibilità di bilancio.
+    </p>
+    <h2>
+      Art. 5<span>(Accessibilità degli strumenti didattici e formativi)</span>
+    </h2>
+    <p>
+      1. Le disposizioni della presente legge si applicano, altresì, al
+      materiale formativo e didattico utilizzato nelle scuole di ogni ordine e
+      grado.
+    </p>
+    <p>
+      2. Le convenzioni stipulate tra il Ministero dell'istruzione,
+      dell'università e della ricerca e le associazioni di editori per la
+      fornitura di libri alle biblioteche scolastiche prevedono sempre la
+      fornitura di copie su supporto digitale degli strumenti didattici
+      fondamentali, accessibili agli alunni disabili e agli insegnanti di
+      sostegno, nell'ambito delle disponibilità di bilancio.
+    </p>
+    <h2>Art. 6<span>(Verifica dell'accessibilità su richiesta)</span></h2>
+    <p>
+      1. La Presidenza del Consiglio dei ministri - Dipartimento per
+      l'innovazione e le tecnologie valuta su richiesta l'accessibilità dei siti
+      INTERNET o del materiale informatico prodotto da soggetti diversi da
+      quelli di cui all'articolo 3.
+    </p>
+    <p>
+      2. Con il regolamento di cui all'articolo 10 sono individuati:
+      <ol>
+        <li>a) le modalità con cui può essere richiesta la valutazione;</li>
+        <li>
+          b) i criteri per la eventuale partecipazione del richiedente ai costi
+          dell'operazione;
+        </li>
+        <li>
+          c) il marchio o logo con cui è reso manifesto il possesso del
+          requisito dell'accessibilità;
+        </li>
+        <li>
+          d) le modalità con cui può essere verificato il permanere del
+          requisito stesso.
+        </li>
+      </ol>
+    </p>
+    <h2>Art. 7<span>(Compiti amministrativi)</span></h2>
+    <p>
+      1. La Presidenza del Consiglio dei ministri - Dipartimento per
+      l'innovazione e le tecnologie, anche avvalendosi del Centro nazionale per
+      l'informatica nella pubblica amministrazione di cui all'articolo 4, comma
+      1, del decreto legislativo 12 febbraio 1993, n. 39, come sostituito
+      dall'articolo 176 del decreto legislativo 30 giugno 2003, n. 196:
+      <ol>
+        <li>
+          a) effettua il monitoraggio dell'attuazione della presente legge;
+        </li>
+        <li>
+          b) vigila sul rispetto da parte delle amministrazioni statali delle
+          disposizioni della presente legge;
+        </li>
+        <li>
+          c) indica i soggetti, pubblici o privati, che, oltre ad avere
+          rispettato i requisiti tecnici indicati dal decreto di cui
+          all'articolo 11, si sono anche meritoriamente distinti per l'impegno
+          nel perseguire le finalità indicate dalla presente legge;
+        </li><li>
+          d) promuove, di concerto con il Ministero del lavoro e delle politiche
+          sociali, progetti, iniziative e programmi finalizzati al miglioramento
+          e alla diffusione delle tecnologie assistive e per l'accessibilità;
+        </li><li>
+          e) promuove, con le altre amministrazioni interessate, sentita la
+          Conferenza permanente per i rapporti tra lo Stato, le regioni e le
+          province autonome di Trento e di Bolzano, l'erogazione di
+          finanziamenti finalizzati alla diffusione tra i disabili delle
+          tecnologie assistive e degli strumenti informatici dotati di
+          configurazioni particolari e al sostegno di progetti di ricerca nel
+          campo dell'innovazione tecnologica per la vita indipendente e le pari
+          opportunità dei disabili;
+        </li><li>
+          f) favorisce, di concerto con il Ministero del lavoro e delle
+          politiche sociali e con il Ministro per le pari opportunità, lo
+          scambio di esperienze e di proposte fra associazioni di disabili,
+          associazioni di sviluppatori competenti in materia di accessibilità,
+          amministrazioni pubbliche, operatori economici e fornitori di hardware
+          e software, anche per la proposta di nuove iniziative;
+        </li><li>
+          g) promuove, di concerto con i Ministeri dell'istruzione,
+          dell'università e della ricerca e per i beni e le attività culturali,
+          iniziative per favorire l'accessibilità alle opere multimediali, anche
+          attraverso specifici progetti di ricerca e sperimentazione con il
+          coinvolgimento delle associazioni delle persone disabili; sulla base
+          dei risultati delle sperimentazioni sono indicate, con decreto emanato
+          di intesa dai Ministri interessati, le regole tecniche per
+          l'accessibilità alle opere multimediali;
+        </li><li>
+          h) definisce, di concerto con il Dipartimento della funzione pubblica
+          della Presidenza del Consiglio dei ministri, gli obiettivi di
+          accessibilità delle pubbliche amministrazioni nello sviluppo dei
+          sistemi informatici, nonché l'introduzione delle problematiche
+          relative all'accessibilità nei programmi di formazione del personale.
+        </li>
+      </ol>
+    </p>
+    <p>
+      2. Le regioni, le province autonome e gli enti locali vigilano
+      sull'attuazione da parte dei propri uffici delle disposizioni della
+      presente legge.
+    </p>
+    <h2>
+      Art. 8<span>(Formazione)</span>
+    </h2>
+    <p>
+      1. Le amministrazioni di cui all'articolo 3, comma 1, nell'ambito delle
+      attività di cui al comma 4 dell'articolo 7 del decreto legislativo 30
+      marzo 2001, n. 165, nonché dei corsi di formazione organizzati dalla
+      Scuola superiore della pubblica amministrazione, e nell'ambito delle
+      attività per l'alfabetizzazione informatica dei pubblici dipendenti di cui
+      all'articolo 27, comma 8, lettera g), della legge 16 gennaio 2003, n. 3,
+      inseriscono tra le materie di studio a carattere fondamentale le
+      problematiche relative all'accessibilità e alle tecnologie assistive.
+    </p>
+    <p>
+      2. La formazione professionale di cui al comma 1 è effettuata con
+      tecnologie accessibili.
+    </p>
+    <p>
+      3. Le amministrazioni di cui all'articolo 3, comma 1, nell'ambito delle
+      disponibilità di bilancio, predispongono corsi di aggiornamento
+      professionale sull'accessibilità.
+    </p>
+    <h2>
+      Art. 9<span>(Responsabilità)</span>
+    </h2>
+    <p>
+      1. L'inosservanza delle disposizioni della presente legge comporta
+      responsabilità dirigenziale e responsabilità disciplinare ai sensi degli
+      articoli 21 e 55 del decreto legislativo 30 marzo 2001, n. 165, ferme
+      restando le eventuali responsabilità penali e civili previste dalle norme
+      vigenti.
+    </p>
+    <h2>
+      Art. 10<span>(Regolamento di attuazione)</span>
+    </h2>
+    <p>
+      1. Entro novanta giorni dalla data di entrata in vigore della presente
+      legge, con regolamento emanato ai sensi dell'articolo 17, comma 1, della
+      legge 23 agosto 1988, n. 400, sono definiti:
+      <ol>
+        <li>
+          a) i criteri e i princìpi operativi e organizzativi generali per
+          l'accessibilità;
+        </li>
+        <li>b) i contenuti di cui all'articolo 6, comma 2;</li>
+        <li>
+          c) i controlli esercitabili sugli operatori privati che hanno reso
+          nota l'accessibilità dei propri siti e delle proprie applicazioni
+          informatiche;
+        </li>
+        <li>
+          d) i controlli esercitabili sui soggetti di cui all'articolo 3, comma
+          1.
+        </li>
+      </ol>
+    </p>
+    <p>
+      2. Il regolamento di cui al comma 1 è adottato previa consultazione con le
+      associazioni delle persone disabili maggiormente rappresentative, con le
+      associazioni di sviluppatori competenti in materia di accessibilità e di
+      produttori di hardware e software e previa acquisizione del parere delle
+      competenti Commissioni parlamentari, che devono pronunciarsi entro
+      quarantacinque giorni dalla richiesta, e d'intesa con la Conferenza
+      unificata di cui all'articolo 8 del decreto legislativo 28 agosto 1997, n.
+      281.
+    </p>
+    <h2>Art. 11<span>(Requisiti tecnici)</span></h2>
+    <p>
+      1. Entro centoventi giorni dalla data di entrata in vigore della presente
+      legge il Ministro per l'innovazione e le tecnologie, consultate le
+      associazioni delle persone disabili maggiormente rappresentative, con
+      proprio decreto stabilisce, nel rispetto dei criteri e dei princìpi
+      indicati dal regolamento di cui all'articolo 10:
+      <ol>
+        <li>
+          a) le linee guida recanti i requisiti tecnici e i diversi livelli per
+          l'accessibilità;
+        </li>
+        <li>
+          b) le metodologie tecniche per la verifica dell'accessibilità dei siti
+          INTERNET, nonché i programmi di valutazione assistita utilizzabili a
+          tale fine.
+        </li>
+      </ol>
+    </p>
+    <h2>Art. 12<span>(Normative internazionali)</span></h2>
+    <p>
+      1. Il regolamento di cui all'articolo 10 e il decreto di cui all'articolo
+      11 sono emanati osservando le linee guida indicate nelle comunicazioni,
+      nelle raccomandazioni e nelle direttive sull'accessibilità dell'Unione
+      europea, nonché nelle normative internazionalmente riconosciute e tenendo
+      conto degli indirizzi forniti dagli organismi pubblici e privati, anche
+      internazionali, operanti nel settore.
+    </p>
+    <p>
+      2. Il decreto di cui all'articolo 11 è periodicamente aggiornato, con la
+      medesima procedura, per il tempestivo recepimento delle modifiche delle
+      normative di cui al comma 1 e delle innovazioni tecnologiche nel frattempo
+      intervenute.
+    </p>
+    <p style={{ marginTop: "3rem" }}>
+      La presente legge, munita del sigillo dello Stato, sarà inserita nella
+      Raccolta ufficiale degli atti normativi della Repubblica Italiana. È fatto
+      obbligo a chiunque spetti di osservarla e di farla osservare come legge
+      dello Stato.
+    </p>
+    <p style={{ textAlign: "right", margin: "3rem auto" }}>
+      Data a Roma, addì 9 gennaio 2004
+    </p>
+    <p>
+      CIAMPI<span>Berlusconi, Presidente del Consiglio dei Ministri</span>
+       Stanca, Ministro per l'innovazione e le tecnologie
+    </p>
+    <p>Visto, il Guardasigilli: Castelli</p>
+  </article>
 </Layout>
+
+<style>
+  header {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+  }
+  p span,
+  header span,
+  h2 span {
+    display: block;
+  }
+  li {
+    list-style-type: none;
+  }
+</style>

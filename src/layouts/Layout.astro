@@ -37,7 +37,8 @@ const { description, keywords, title, prev, next, hideNavigation } =
     {!hideNavigation && <Navigation prev={prev} next={next} />}
     <footer>
       &copy; <a href="mailto:luca@sirlisko.com">Luca Lischetti</a> (<a
-        href="http://creativecommons.org/licenses/by-nc-sa/3.0/it/">licenza</a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"
+        >licenza</a
       >), scritto Gennaio - Marzo 2010, ultima modifica Giugno 2012.
     </footer>
   </body>
@@ -64,27 +65,48 @@ const { description, keywords, title, prev, next, hideNavigation } =
     border: 1px solid #000;
   }
   h1 {
-    font-size: 200%;
     margin-bottom: 1.4em;
     page-break-before: left;
-    line-height: 1;
+    line-height: 1.25;
+  }
+  @media (min-width: 650px) {
+    h1 {
+      font-size: 200%;
+    }
   }
   h1 .capitolo {
     display: block;
-    font-size: 50%;
+    font-size: 0.75em;
     font-weight: normal;
     margin-bottom: 1rem;
+  }
+  @media (min-width: 650px) {
+    h1 .capitolo {
+      font-size: 50%;
+    }
   }
   article {
     color: #222;
     line-height: 150%;
     max-width: 850px;
-    padding: 3em 5em;
+  }
+  article,
+  footer {
+    padding: 1em;
+  }
+  @media (min-width: 650px) {
+    article,
+    footer {
+      padding: 3em 5em;
+    }
   }
   .referenze {
     font-size: 80%;
     line-height: 100%;
     margin-top: 3em;
+  }
+  .referenze a {
+    line-break: anywhere;
   }
   .referenze li {
     line-height: 2;
@@ -98,10 +120,19 @@ const { description, keywords, title, prev, next, hideNavigation } =
     font-size: 80%;
     line-height: 150%;
     margin-top: 2em;
-    padding: 3em 6em;
   }
 
   :target {
     background-color: #def;
+  }
+
+  @media (max-width: 650px) {
+    pre {
+      white-space: pre-line;
+      padding: 1em;
+    }
+  }
+  img {
+    max-width: 100%;
   }
 </style>
