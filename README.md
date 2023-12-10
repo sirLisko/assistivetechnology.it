@@ -12,4 +12,4 @@ Documento di tesi: Il file PDF contenente il testo della tesi è disponibile [qu
 
 ## Licenza
 
-Tutti i contenuti presenti in questo repository sono rilasciati sotto la licenza [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it). Ciò significa che puoi condividere, adattare e distribuire questo materiale, a condizione di fornire l'adeguato riconoscimento, non utilizzare il materiale per fini commerciali e condividere qualsiasi adattamento sotto la stessa licenza.
+Tutti i contenuti presenti in questo repository sono rilasciati sotto la licenza [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it). Ciò significa che puoi condividere, adattare e distribuire questo materiale, a condizione di fornire l'adeguato riconoscimento, non utilizzare il materiale per fini commerciali e condividere qualsiasi adattamento sotto la stessa licenza.
