@@ -36,10 +36,18 @@ const { description, keywords, title, prev, next, hideNavigation } =
     <slot />
     {!hideNavigation && <Navigation prev={prev} next={next} />}
     <footer>
-      &copy; <a href="mailto:luca@sirlisko.com">Luca Lischetti</a> (<a
-        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"
-        >licenza</a
-      >), scritto Gennaio - Marzo 2010, ultima modifica Giugno 2012.
+      <p>
+        &copy; <a href="https://sirlisko.com">Luca Lischetti</a> (<a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"
+          >licenza</a
+        >), scritto Gennaio - Marzo 2010, ultima modifica Giugno 2012.
+      </p>
+      <p>
+        Codice del sito disponibile su Github <a
+          href="https://github.com/sirLisko/assistivetechnology.it"
+          >https://github.com/sirLisko/assistivetechnology.it</a
+        >.
+      </p>
     </footer>
   </body>
 </html>
@@ -99,6 +107,9 @@ const { description, keywords, title, prev, next, hideNavigation } =
     footer {
       padding: 3em 5em;
     }
+  }
+  footer {
+    text-align: center;
   }
   .referenze {
     font-size: 80%;
