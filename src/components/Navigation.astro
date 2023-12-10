@@ -1,0 +1,44 @@
+---
+interface Props {
+  prev?: {
+    href: string;
+    title: string;
+  };
+  next?: {
+    href: string;
+    title: string;
+  };
+}
+
+const { prev, next } = Astro.props;
+---
+
+<nav aria-label="Main">
+  <ul>
+    <li class="prev">
+      {prev && <a href={prev.href}>&lt;&lt; {prev.title}</a>}
+    </li>
+    <li class="index"><a href="/">Indice</a></li>
+    <li class="next">
+      {next && <a href={next.href}>{next.title} &gt;&gt;</a>}
+    </li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    color: #aaa;
+    max-width: 850px;
+    width: 100%;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+  }
+  nav li.prev {
+    text-align: right;
+  }
+</style>
