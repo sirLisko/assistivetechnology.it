@@ -15,7 +15,10 @@ interface Props {
   };
   hideNavigation?: boolean;
 }
-
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href.replace(
+  /\/+$/,
+  ""
+);
 const { description, keywords, title, prev, next, hideNavigation } =
   Astro.props;
 ---
@@ -29,6 +32,7 @@ const { description, keywords, title, prev, next, hideNavigation } =
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Luca Lischetti" />
     <link type="text/plain" rel="author" href="/humans.txt" />
+    <link rel="canonical" href={canonicalURL} />
     <title>{title}</title>
   </head>
   <body>
