@@ -16,11 +16,23 @@ const { prev, next } = Astro.props;
 <nav aria-label="Main">
   <ul>
     <li class="prev">
-      {prev && <a href={prev.href}>&lt;&lt; {prev.title}</a>}
+      {
+        prev && (
+          <a href={prev.href} rel="prev">
+            &lt;&lt; {prev.title}
+          </a>
+        )
+      }
     </li>
     <li class="index"><a href="/">Indice</a></li>
     <li class="next">
-      {next && <a href={next.href}>{next.title} &gt;&gt;</a>}
+      {
+        next && (
+          <a href={next.href} rel="next">
+            {next.title} &gt;&gt;
+          </a>
+        )
+      }
     </li>
   </ul>
 </nav>
